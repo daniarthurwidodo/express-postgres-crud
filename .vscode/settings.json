@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "express-postgres",
+            "username": "postgres",
+            "database": "express_crud"
+        }
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "eslint.validate": ["typescript"]
+}

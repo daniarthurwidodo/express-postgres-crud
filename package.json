@@ -1,0 +1,38 @@
+{
+  "name": "express-postgres-crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/app.js",
+    "dev": "ts-node src/app.ts",
+    "build": "tsc",
+    "seed": "ts-node src/seeders/product.seeder.ts",
+    "migrate": "ts-node src/db/migrate.ts",
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint src/**/*.ts",
+    "lint:fix": "ESLINT_USE_FLAT_CONFIG=false eslint src/**/*.ts --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.14.1"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.14",
+    "@types/pg": "^8.11.11",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "eslint-plugin-import": "^2.31.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.28.0"
+  }
+}

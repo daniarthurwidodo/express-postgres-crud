@@ -19,9 +19,11 @@ app.get('/', (req: Request, res: Response) => {
 // Product routes
 app.use('/api/products', productRoutes);
 
-// Start server
-app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
-});
+// Only start the server if this file is run directly (not when imported in tests)
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(port, () => {
+    console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+  });
+}
 
 export default app;
